@@ -1,6 +1,7 @@
-# Publishes to npm with provenance when a GitHub release is published.
-# Needs npm "trusted publishing" enabled for ucp-check → this repo/workflow
-# (npmjs.com → package → Settings → Publishing access). No token to rotate.
+# Publishes ucp-check and its alias ucpchecker to npm with provenance when a
+# GitHub release is published. Both packages have this workflow registered as
+# their npm trusted publisher (npmjs.com → package → Settings), so there is no
+# token to rotate. Bump both package.json versions before tagging a release.
 name: publish
 on:
   release:
@@ -19,3 +20,5 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: npm test
       - run: npm publish --provenance --access public
+      - run: npm publish --provenance --access public
+        working-directory: alias/ucpchecker
