@@ -1,0 +1,17 @@
+{
+  "name": "ucp-check",
+  "version": "0.1.0",
+  "description": "Is this domain verified for the Universal Commerce Protocol? A CLI and CI gate over the UCP Checker API.",
+  "keywords": ["ucp", "universal-commerce-protocol", "agentic-commerce", "agent-readiness", "validator", "ci", "cli", "ucpchecker"],
+  "homepage": "https://github.com/ucpchecker/ucp-check",
+  "bugs": "https://github.com/ucpchecker/ucp-check/issues",
+  "repository": { "type": "git", "url": "git+https://github.com/ucpchecker/ucp-check.git" },
+  "license": "MIT",
+  "author": "UCP Checker (https://ucpchecker.com)",
+  "bin": { "ucp-check": "bin/ucp-check.js" },
+  "files": ["bin/", "README.md", "LICENSE", "CHANGELOG.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test test/cli.test.js"
+  }
+}
