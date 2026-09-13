@@ -1,0 +1,14 @@
+{
+  "name": "ucpchecker",
+  "version": "0.1.0",
+  "description": "Alias for ucp-check — npx ucpchecker <domain>. Is this domain verified for the Universal Commerce Protocol?",
+  "keywords": ["ucp", "universal-commerce-protocol", "agentic-commerce", "validator", "cli", "ucpchecker"],
+  "homepage": "https://github.com/ucpchecker/ucp-check",
+  "repository": { "type": "git", "url": "git+https://github.com/ucpchecker/ucp-check.git", "directory": "alias/ucpchecker" },
+  "license": "MIT",
+  "author": "UCP Checker (https://ucpchecker.com)",
+  "bin": { "ucpchecker": "bin/ucpchecker.js" },
+  "files": ["bin/", "README.md"],
+  "engines": { "node": ">=18" },
+  "dependencies": { "ucp-check": "^0.1.0" }
+}
